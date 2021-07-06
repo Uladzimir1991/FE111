@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.site_button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.top_section {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top_section .logo a {
+    display: inline-block;
+    height: 100%;
+}
+
+.top_section .nav {
+    line-height: 100%;
+}
+
+.top_section .nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.top_section .nav ul li:not(:last-child) {
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top_section .nav ul li:last-child {
+    margin-left: 200px;
+    position: relative;
+        font-size: 16px;
+    font-weight: bold;
+}
+
+.top_section .nav ul li .ico_cart {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: calc(50% - 7px);
+    left: -30px;
+}
+
+.top_section .nav ul li a {
+    text-decoration: none;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    line-height: 80px;
+    display: inline-block;
+}
+
+.top_section .promo {
+    display: flex;
+    flex-direction: column;
+    height: 414px;
+    /*overflow: hidden;*/
+}
+
+.top_section .promo .promo_title1,
+.top_section .promo .promo_title2,
+.top_section .promo .promo_title3 {
+    display: flex;
+    width: 100%;
+}
+
+.top_section .promo .promo_item1,
+.top_section .promo .promo_item2,
+.top_section .promo .promo_item3 {
+    margin-top: 70px;
+    width: 35%;
+    flex-wrap: wrap;
+}
+
+.top_section .promo h2 {
+    font-size: 53px;
+    font-weight: bold;
+}
+
+.top_section .promo p {
+    color: #3f3f3f;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0 30px 0;
+}
+
+.top_section .promo .promo_button {
+    padding: 20px 60px;
+    background-color: #fb565a;
+}
+
+.top_section .promo article {
+    position: relative;
+    left: 50px;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
+}
+
+.advantages {
+    padding: 80px 0;
+}
+
+.advantages .advantages_items .item1 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.advantages .advantages_items .item1 ul li {
+    width: 300px;
+}
+
+.advantages .advantages_items .item1 ul h3 {
+    font-size: 24px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.advantages .advantages_items .item1 ul .advantage_button1 {
+    padding: 15px 40px;
+    background-color: #fb565a;
+    margin-top: 30px;
+}
+
+.advantages .advantages_items .item1 ul .advantage_button2 {
+    padding: 15px 40px;
+    background-color: #00ca74;
+    margin-top: 30px;
+}
+
+.advantages .advantages_items .item1 ul .advantage_button3 {
+    padding: 15px 40px;
+    background-color: #efc84a;
+    margin-top: 30px;
+}
