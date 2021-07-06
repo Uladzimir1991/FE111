@@ -172,7 +172,9 @@ label {
     transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
-.promo_item1 {
+.promo_item1,
+.promo_item2,
+.promo_item3 {
     text-align: start;
 }
 
@@ -345,4 +347,31 @@ label {
     font-size: 16px;
     margin-top: 20px;
     color: #283136;
+}
+
+.allies .allies_company {
+    padding: 60px 0;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.allies .allies_company ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.allies .allies_company li {
+    position: relative;
+}
+
+.allies .allies_company li:not(:last-child)::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #eeeeee;
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(50% - 5px);
+    right: calc(-50% + 25px);
 }
