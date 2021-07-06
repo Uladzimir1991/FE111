@@ -197,7 +197,6 @@ label {
 
 .advantages {
     padding: 80px 0;
-    border-bottom: 2px solid #eeeeee;
 }
 
 .advantages .advantages_items .item1 ul {
@@ -234,4 +233,116 @@ label {
     padding: 15px 40px;
     background-color: #efc84a;
     margin-top: 30px;
+}
+
+.studio_titles {
+    display: flex;
+    border-bottom: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
+    padding: 0 0 80px 0;
+} 
+
+.studio_title_about,
+.studio_title_items {
+    width: 50%;
+}
+
+.studio_title_about {
+    margin-top: 80px;
+}
+
+.studio_title_about h2 {
+    font-size: 42px;
+}
+
+.studio_title_about p {
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 22px;
+    color: #283136;
+}
+
+.studio_title_about h4 {
+    text-transform: uppercase;
+}
+
+.studio_title_about ul {
+    list-style: none;
+}
+
+.studio_title_about ul li span{
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.studio_title_about ul li {
+    color: #283136;
+}
+
+.studio_title_about ul li:not(:last-child) {
+    margin: 30px 0;
+}
+
+.studio_title_about ul,
+.studio_title_items ul {
+    list-style: none;
+}
+
+.studio_title_items {
+    text-align: end;
+    margin-top: 40px;
+}
+
+.studio_title_items img:hover {
+    transform: scale(1.05);
+}
+
+.studio_title_items h4 {
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.studio_title_items ul {
+    display: flex;
+    margin-left: auto;
+    width: 60%;
+}
+
+.studio_title_items ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.studio_title_items ul li {
+    text-align: left;
+}
+
+.studio_title_items ul li span {
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+}
+
+.studio_title_items ul li:not(:last-child) span::after {
+    right: -35%;
+}
+
+.studio_title_items ul li span::after {
+    content: '';
+    background-image: url(../Images/percent.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: -50%;
+    top: 5px;
+}
+
+.studio_title_items li p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #283136;
 }
