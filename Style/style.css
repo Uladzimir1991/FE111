@@ -8,6 +8,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.site a {
+    display: inline-block;
+}
+
 .header {
     background-color: #eeeeee;
 }
@@ -176,6 +180,7 @@ label {
 .promo_item2,
 .promo_item3 {
     text-align: start;
+    margin-left: 5px;
 }
 
 .top_section .promo h2 {
@@ -374,4 +379,239 @@ label {
     transform: rotate(90deg);
     top: calc(50% - 5px);
     right: calc(-50% + 25px);
+}
+
+.contacts {
+    padding-top: 80px;
+    position: relative;
+}
+
+.contacts .map {
+    position: relative;
+}
+
+.adress {
+    position: absolute;
+    top: calc(50% - 140px);
+    width: 210px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+}
+
+.adress h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.adress .adress_item,
+.adress .phone {
+    color: #747474;
+}
+
+.adress .adress_item {
+    margin: 30px 0;
+}
+
+.adress .phone {
+    margin-bottom: 30px;
+}
+
+.adress .adress_button {
+    height: 46px;
+}
+
+.adress .adress_button label {
+    background-color: #fb565a;
+    padding: 15px 35px;
+    border-radius: 3px;
+}
+
+.personal_items {
+    position: absolute;
+    width: 760px;
+    left: calc(50% - 470px);
+    top: -75px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px 1px rgb(92, 92, 92);
+    padding: 70px 100px;
+    display: none;
+}
+
+#write:checked ~ .personal_items {
+    display: inline-block;
+    z-index: 1;
+}
+
+#close:checked ~ .personal_items {
+    display: none;
+}
+
+.personal_items label {
+    width: 30px;
+    height: 4px;
+    background-color: #fecccd;
+    position: absolute;
+    right: 14px;
+    top: 25px;
+    transform: rotate(45deg);
+}
+
+.personal_items label::before {
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #fecccc;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 0;
+}
+
+.personal_items li input {
+    display: inline-block;
+    width: calc(100% - 35px);
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #d7dcde;
+}
+
+.personal_items li input::placeholder,
+.personal_items li textarea::placeholder {
+    color: #a1a1a1;
+}
+
+.personal_items li textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.personal_items li textarea {
+    width: calc(100% - 33px);
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #d7dcde;
+}
+
+.personal_items ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal_items ul li {
+    border-color: #d7dcde;
+}
+
+.personal_items ul li:not(:last-child) {
+    width: calc(43% + 30px);
+}
+
+.personal_items ul li:nth-child(2) {
+    margin-left: 10px;
+}
+
+.personal_items ul li:nth-child(3) {
+    width: 100%;
+}
+
+.personal_items h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.personal_items p {
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.personal_button {
+    background-color: #fb565a;
+    padding: 15px 80px;
+    border-radius: 3px;
+}
+
+.close {
+    position: relative;
+    top: 50px;
+    left: 720px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+.footer_items {
+    display: flex;
+    padding: 80px 0;
+    align-items: center;
+}
+
+.footer_social {
+    width: 33.3%;
+}
+
+.footer_social ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    z-index: 0;
+}
+
+.footer_social ul li:nth-child(1) a {
+    width: 70px;
+    height: 70px;
+    background-color: #e1e1e1;
+    border-radius: 100%;
+    position: relative;
+}
+
+.footer_social ul li:nth-child(1) img {
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(50% - 12px);
+}
+
+.footer_social ul li:nth-child(2) a {
+    width: 70px;
+    height: 70px;
+    background-color: #e1e1e1;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 10px;
+    z-index: 0;
+}
+
+.footer_social ul li:nth-child(2) img {
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(50% - 6px);
+}
+
+.footer_social ul li:nth-child(3) a {
+    width: 70px;
+    height: 70px;
+    background-color: #e1e1e1;
+    border-radius: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.footer_social ul li:nth-child(3) img {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: calc(50% - 11px);
+}
+
+.footer_title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.footer_title p {
+    color: #767676;
 }
