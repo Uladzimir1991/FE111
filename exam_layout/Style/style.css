@@ -524,8 +524,8 @@ label {
     height: 4px;
     background-color: #fecccd;
     position: absolute;
-    right: 14px;
-    top: 25px;
+    right: 90px;
+    top: 90px;
     transform: rotate(45deg);
 }
 
@@ -537,6 +537,16 @@ label {
     position: absolute;
     transform: rotate(90deg);
     right: 0;
+}
+
+.personal_items label::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    transform: rotate(45deg);
 }
 
 .personal_items li input {

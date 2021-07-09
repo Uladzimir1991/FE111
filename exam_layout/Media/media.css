@@ -211,13 +211,13 @@
         margin-left: 0;
     }
 
-    .close {
-        top: 60px;
-        left: 220px;
-    }
-
     .adress {
         padding: 50px 30px;
+    }
+
+    .personal_items label {
+        top: 30px;
+        right: 30px;
     }
 
     .footer_social ul {
@@ -284,10 +284,7 @@
         padding: 50px 20px;
     }
 
-    .close {
-        top: -20px;
-        left: 150px;
-    }
+
 
     .footer_items {
         flex-direction: column;
@@ -344,9 +341,7 @@
         left: calc(50% - 167px);
     }
 
-    .close {
-        left: 130px;
-    }
+
 
     .footer_social ul li {
         width: 25%;
@@ -405,8 +400,14 @@
         padding: 20px 20px;
     }
 
-    .close {
-        left: 100px;
+    .personal_items label {
+        top: 20px;
+        right: 10px;
+    }
+
+    .personal_items label::after {
+        top: -20px;
+        left: -7px;
     }
 
     .personal_button {
