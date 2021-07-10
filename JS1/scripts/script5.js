@@ -1,6 +1,5 @@
-let r = 5
-    Pi = 3.14
-    Vcircle = Pi * (r * r)
+let r = 5,
+    Vcircle = Pi * (r * r);
 
 console.log(Vcircle + 'см');
 console.log('');

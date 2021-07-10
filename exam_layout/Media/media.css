@@ -211,8 +211,15 @@
         margin-left: 0;
     }
 
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .adress {
-        padding: 50px 30px;
+        position: relative;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .personal_items label {
@@ -269,22 +276,12 @@
         text-align: left;
     }
 
-    .adress {
-        top: -10%;
-        left: 17%;
-        background-color: #e4e4e4;
-        justify-content: center;
-        padding: 30px;
-    }
-
     .personal_items {
         width: 356px;
         left: calc(50% - 195px);
         text-align: center;
         padding: 50px 20px;
     }
-
-
 
     .footer_items {
         flex-direction: column;
@@ -390,7 +387,6 @@
     }
 
     .adress {
-        left: 12%;
         padding: 20px;
     }
 
