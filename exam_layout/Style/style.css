@@ -367,11 +367,7 @@ label {
 .studio_title_items ul {
     display: flex;
     margin-left: auto;
-    width: 73%;
-}
-
-.studio_title_items ul li:nth-child(2) {
-    margin: 0 30px;
+    width: 60%;
 }
 
 .studio_title_items ul li {
@@ -388,7 +384,7 @@ label {
 }
 
 .studio_title_items ul li:not(:last-child) span::after {
-    right: -35%;
+    right: -32%;
 }
 
 .studio_title_items ul li span::after {

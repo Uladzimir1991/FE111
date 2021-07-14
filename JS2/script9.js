@@ -11,11 +11,11 @@ else if(dayNum < year) console.log('Меньше года!');
 else if(dayNum == year) console.log('1 год');
 else if (dayNum > year) console.log('1 год'+ ' ' + 'и' + ' ' + (dayNum - year) + ' дней');
 
-if(dayNum < Month & dayNum > 0) console.log('Меньше месяца!');
+if(dayNum < Month && dayNum > 0) console.log('Меньше месяца!');
 else if(dayNum == Month) console.log('1 месяц');
 else if (dayNum > Month) console.log('1 месяц'+ ' ' + 'и' + ' ' + (dayNum - Month) + ' дней');
 
-if(dayNum < weak & dayNum > 0) console.log('Меньше недели!');
+if(dayNum < weak && dayNum > 0) console.log('Меньше недели!');
 else if(dayNum == weak) console.log('1 неделя');
 else if (dayNum > weak) console.log('1 неделя'+ ' ' + 'и' + ' ' + (dayNum - weak) + ' дней');
 

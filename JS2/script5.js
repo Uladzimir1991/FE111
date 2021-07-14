@@ -13,4 +13,6 @@ let b = 2,
 if(totalAmount > 1) {
     totalAmount *= totalAmount;
     console.log(totalAmount);
-} else console.log('\n' + 'Сумма чисел меньше 1.')
+} else {
+    console.log('\n' + 'Сумма чисел меньше 1.');
+}
