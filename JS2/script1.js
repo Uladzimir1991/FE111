@@ -7,6 +7,4 @@ let Name = prompt('Ваше имя'),
     email = prompt('Ваш почтовый ящик'),
     company = prompt('Ваша организация');
 
-
-console.log(Name + '\n\n'+ age +'\n\n' + city + '\n\n' + phone + '\n\n' + email + '\n\n' + company);
-console.log('\n' + `Меня зовут ` + Name + `. Мне ` + age + ` лет. Я проживаю в городе ` + city + ` и работаю в компании ` + company + '.' + '\n' + `Мои контактные данные: ` + phone +  `, ` + email + `.`);
+console.log(`Меня зовут ${Name}. Мне ${age} лет. Я проживаю в городе ${city} и работаю в компании ${company}. Мои контактные данные: ${phone}, ${email}. `);
