@@ -110,3 +110,65 @@ while ( i >= 50 ) {
 } 
 
 console.log(`Количество итераций равно - ${num}. Последнее число - ${i}`);
+
+console.log('');
+console.log('');
+
+
+// Task 8
+
+// Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, до
+// тех пор, пока не будет введена пустая строка или 0. После выхода из цикла выведите
+// общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
+// число, то вывести сообщение об ошибке ввода. При подсчете учесть, что пользователь
+// может ввести отрицательное значение.
+
+let someInt = 0,
+    numberOfIteration = 0;
+
+sum = 0;
+
+do {
+    someInt = prompt(`Введите число: `);
+    if (someInt != Number) {
+        console.log('Ошибка ввода!')
+    }
+    numberOfIteration++;
+    sum += +someInt;
+}
+
+while (someInt != '' && someInt != null) {
+    console.log(`Сумма чисел = ${sum}. Среднее арифметическое = ${sum / (numberOfIteration - 1)}`);
+}
+
+
+
+console.log('');
+console.log('');
+
+
+// Task 9 
+
+// Дана строка с числами разделенными пробелами «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36
+//8 57». Найдите самое большое и самое маленькое число в строке, используя цикл.
+
+let string = '4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57';
+let cur='', min, max;
+for (let i = 0; i < string.length; i++) {
+  cur += string[i];
+  if (+string[i] && !+string[i+1]) {
+    if (typeof min !== 'number' || cur < +min) min = +cur;
+    if (typeof max !== 'number' || cur > +max) max = +cur;
+    cur = '';
+  }
+}
+console.log('Min:', min, 'Max:', max);
+
+// let str = '4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57';
+// const arr = str.split(' ');
+// console.log(`Min: ${Math.min(...arr)}, Max: ${Math.max(...arr)}`)
+
+
+// Task 10
+
+//
