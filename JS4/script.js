@@ -175,13 +175,20 @@ console.log('');
 // используя цикл while и метод reverse.
 
 array = [12, false, 'Текст', 4, 2, -5, 0];
-    i;
+i = 0;
 
-while( i < array.length) {
-    array.reverse();
-    console.log(array);
-    break;
+array.reverse();
+
+console.log(array);
+
+console.log('');
+
+while(i < array.length) {
+    array[i] = array.splice(0);
+    console.log(array[i]);
+    i++;
 }
+
 
 console.log('');
 console.log('');
