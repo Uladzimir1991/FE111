@@ -10,7 +10,7 @@ console.log('');
 console.log('');
 
 
-for(i = 35; i >= 8; i--) {
+for(let i = 35; i >= 8; i--) {
     console.log(i);
 }
 
@@ -23,7 +23,7 @@ console.log('');
 // Выведите столбец чисел от 89 до 11 - воспользуйтесь циклом while и отделите числа
 //тегом <br /> друг от друга, чтобы получить столбец, а не строку.
 
-i = 89;
+let i = 89;
 
 while(i >= 11) {
     document.write(`${i} <br/>`);
@@ -50,10 +50,10 @@ console.log(``);
 // Найдите сумму чисел в каждом числе от 1 до 5, например: в числе 3 сумма составляет 6
 // (1+2+3).
 
-for( i = 1; i <= 5; i++ ) {
+for(let i = 1; i <= 5; i++ ) {
     sum = 0;
 
-    for ( j = 0; j <= i; j++ ) {
+    for (let j = 0; j <= i; j++ ) {
         sum += j;
     }
 
@@ -68,11 +68,19 @@ console.log(``);
 
 // Выведите чётные числа от 8 до 56. Решить задание через while и for.
 
-for ( i = 8; i <= 56; i++) {
-    while( i % 2 == 0) {
-        console.log(i);
-        break; 
+for (let i = 8; i <= 56; i++) {
+    if( i % 2 == 0) {
+        console.log(i); 
     }
+}
+
+console.log(``);
+
+i = 8;
+
+while (i <= 56 && i >= 8) {
+    console.log(i);
+    i += 2;
 }
 
 console.log('');
@@ -86,8 +94,8 @@ console.log('');
 // 2*4 = 8
 // 2*5 = 10 ...
 
-for ( i = 2; i <= 10; i++ ) {
-    for ( j = 1; j <= 10; j++) {
+for (let i = 2; i <= 10; i++ ) {
+    for (let j = 1; j <= 10; j++) {
         prem = i * j;
         console.log(`${i} * ${j} = ${prem}`);
     }
