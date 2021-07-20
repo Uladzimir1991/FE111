@@ -333,3 +333,25 @@ function isSumLess(num) {
 
 let finalSum = isSumLess(num);
 console.log('Конечное число = ' + finalSum);
+
+
+console.log('');
+console.log('');
+
+
+
+// Task 11
+
+// Дан массив с числами (передается параметром). Выведите
+// последовательно его элементы, используя рекурсию и не используя цикл.
+
+
+var arr = [3, 5256, 12 + 'x', 32, 'false' , 96, 36];
+
+function func(i){
+    console.log(arr[i++]);
+    if(i < arr.length){
+        func(i);
+    }
+}
+func(0);
