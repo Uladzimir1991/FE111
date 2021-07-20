@@ -146,17 +146,17 @@ function array1 (arr) {
     console.log(isEven());
 
     function isEven () {
-        let res = [];
+        let newArray = [];
             for(let i = 0; i < arr.length; i++){
                 if(arr[i] % 2 == 0) {
-                    res.push(arr[i]);
+                    newArray.push(arr[i]);
                 }
             }
-        return res;
+        return newArray;
     }
 }
 
-array1([2, 56, 28, -8, 10346, 'next', true]);
+array1([2,1, 555, 56, 28, -8, 10346, 'next', true]);
 
 
 console.log('');
@@ -210,7 +210,7 @@ function pyram(n) {
     }
 }
 
-pyram(prompt('число'));
+pyram(prompt('Количество строк: '));
 
 
 console.log('');
@@ -281,20 +281,20 @@ console.log('');
 // Фибоначи от 0 до 1000.
 
 function fibArray() {
-
-    var var1 = 0,
-        var2 = 1,
+    
+    let fib1 = 0,
+        fib2 = 1,
         arr = [],
-        var3;
+        fib3;
+        
+    let borderNum = prompt('Введите границу массива чисел Фибоначи: ');
 
-    var num = prompt('Введите границу массива чисел Фибоначи: ');
-
-    arr.push(var1);
-    while(var2 + var1 < num) {
-    var3 = var1 + var2;
-    var1 = var2;
-    var2 = var3;
-    arr.push(var3);
+    arr.push(fib1);
+    while(fib2 + fib1 < borderNum) {
+    fib3 = fib1 + fib2;
+    fib1 = fib2;
+    fib2 = fib3;
+    arr.push(fib3);
     }
     console.log(arr);
 }
