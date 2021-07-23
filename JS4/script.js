@@ -106,13 +106,11 @@ console.log('');
 let week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
 
 for (let i = 0; i < week.length; i++) {
-    if(i <= 4) { 
+    if(week[i] == 'Суббота' || week[i] == 'Воскресенье') { 
+        document.write(`${week[i].bold()} `)
+    } else {
         document.write(`${week[i]} `)
     }
-
-    if (i > 4) {
-        document.write(`${week[i].bold()} `)
-    } 
 }
 
 console.log('');
@@ -203,11 +201,7 @@ console.log('');
 
 i = 0;
 
-let max,
-    space = "",
-    star = ""; 
-
-max = prompt('Определите количество строк(введите число): ');
+let max = prompt('Определите количество строк(введите число): ');
 
 while (i < max) {
     space = "";
@@ -217,5 +211,3 @@ while (i < max) {
     console.log(space + star);
     i++;
 }
-
-// нашёл в инете, способ не сложный, но сам бы думал долго) Вопрос: можно ли упростить решение? 
