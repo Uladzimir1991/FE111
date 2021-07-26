@@ -21,14 +21,9 @@ console.log('');
 // дату в формат 31/12/2025.
 
 let str2 = '2025-12-31';
-let arr = str2.split('-');
 
-console.log(arr);
-
-let newStr = arr[2] + '/' + arr[1] + '/'+arr[0];
-
-console.log(newStr);
-
+const newStr2 = str2.replace(/-/gi, '/');
+console.log(newStr2);
 
 console.log('');
 console.log('');
@@ -125,16 +120,19 @@ console.log('');
 
 var date = new Date();
 
- function zero (getMonth, getDate, getSeconds) {
+ function zero (/*getMonth, getDate, getSeconds*/n) {
 
-	if ((getMonth  >= 0 || getDate >= 0) && (getMonth < 10 || getDate < 10)) { 
-		return '0' + getMonth || getDate;
-	} else {
-		return getMonth || getDate;
-	}
+    if (n < 10) {
+        n = '0' + n; 
+    }
+    return n;
+
+	// if ((getMonth  >= 0 || getDate >= 0) && (getMonth < 10 || getDate < 10)) { 
+	// 	return '0' + getMonth || getDate;
+	// } else {
+	// 	return getMonth || getDate;
+	// }
 }
-
-zero();
 
 console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${zero(date.getDate())}.${zero(date.getMonth() + 1)}.${date.getFullYear()}`);
 
@@ -175,7 +173,7 @@ let phone8 = prompt('Введите ваш номер телефона: ')
 
 function tel() {
 
-    let regexp8 = /^[+0-9]{1,4}[0-9]{2}[0-9]{3}-[0-9]{2}-[0-9]{2}$/gi;
+    let regexp8 = /^\+?(375|8 ?\(?0)(29|25|44|33)\)? ?(\d{3})\-? ?(\d{2})\-? ?(\d{2})$/gi; 
 
     console.log(regexp8.test(phone8));
 }
@@ -206,11 +204,11 @@ console.log('');
 // Функция должна возвращать true или false. Используйте регулярные
 // выражения.
 
-let mail9= 'hello_world@dogwoof-woof.off';
+let mail9= '123@dogwoof-woof.off';
 
 function email() {
 
-    let regexp9 = /[a-z0-9_-]{2,15}@[a-z0-9_-].[a-z]{2,11}/gi;
+    let regexp9 = /^[a-z]|[0-9?\_?\-?]{2,15}@[a-z\_?\-?].[a-z]{2,11}$/gi;
 
     console.log(regexp9.test(mail9));
 }
