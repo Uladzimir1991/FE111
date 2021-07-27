@@ -227,19 +227,19 @@ console.log('');
 
 let Calc = function() {
 
-        this.get = function() {
-            
-            if (confirm('Включить калькулятор?')) {
+    this.get = function() {
+        
+        if (confirm('Включить калькулятор?')) {
             this.a = +prompt('Введите 1ое число: ');
             this.b = +prompt('Введите 2ое число: ');
             this.oper = prompt('Введите операцию: + , - , * , /, sqrt, hypot, abs');
-    
+
             this.operation();
 
-            } else {
-                console.log('Не хотите, ну как хотите =\ бб =)')
-            };
+        } else {
+            console.log('Не хотите, ну как хотите =\ бб =)')
         };
+    };
     
     
 
@@ -295,3 +295,56 @@ let Calc = function() {
 
 let calc = new Calc();
 calc.get();
+
+
+console.log('');
+console.log('');
+
+
+
+
+let Sportsmen = function(name, age, speed) {
+
+    this.get = function() {
+        if(confirm('Начинаем забег?')) {
+            this.name = name;
+            this.age = +age;
+            this.runSpeed = +speed;
+            this.range = +prompt('Введите дистанцию для бега(в киллометрах): ')
+
+            this.run();
+
+        } else {
+            alert('Отдыхать так отдыхать! Тоже дело хорошее =)')
+        };
+    };
+
+    this.run = function() {
+        if(this.range < this.runSpeed) {
+            this.runTime = Math.round((this.range / this.runSpeed) * 60);
+        } else {
+            this.runTime = this.range / this.runSpeed;
+        };
+
+        this.result();
+    };  
+
+    this.result = function() {
+        if(this.range < this.runSpeed) {
+            alert(`Athlete  ${this.name} ran a distance of ${this.range} kilometer in ${this.runTime} minutes with an average running speed of ${this.runSpeed} km / h. `)
+        } else {
+            alert(`Athlete ${this.name} ran a distance of ${this.range} kilometer in ${this.runTime} hours with an average running speed of ${this.runSpeed} km / h. `)
+        }
+            
+    };
+
+};
+
+let sportsmen = new Sportsmen('Ann', 30, 25);
+sportsmen.get();
+
+let sportsmen2 = new Sportsmen('Bob', 50, 15);
+sportsmen2.get();
+
+let sportsmen3 = new Sportsmen('Alikper', 18, 35);
+sportsmen3.get();
