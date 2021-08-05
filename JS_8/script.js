@@ -52,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
     a1.innerHTML = 'Start here'
     div3.appendChild(a1);
 
+    a1.addEventListener ('mouseover', function() {
+        this.style.backgroundColor = "gold";
+    });
+
+    a1.addEventListener ('mouseout', function() {
+        this.style.background = "0";
+    });
+
 
 
     let div7 = document.createElement('div');
@@ -78,6 +86,14 @@ document.addEventListener('DOMContentLoaded', function () {
     a2.innerHTML = 'Start here'
     div7.appendChild(a2);
 
+    a2.addEventListener ('mouseover', function() {
+        this.style.backgroundColor = "gold";
+    });
+
+    a2.addEventListener ('mouseout', function() {
+        this.style.background = "0";
+    });
+
 
     let style = document.createElement('style');
     style.innerHTML = `
@@ -88,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         body {
             font-family: 'Montserrat', sans-serif;
+            cursor: default;
         }
     
         .article_title {
@@ -164,6 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
             transition: .8s cubic-bezier(.165, .84, .44, 1);
+            cursor: pointer;
         }
 
                 
@@ -194,6 +212,109 @@ document.addEventListener('DOMContentLoaded', function () {
         .title_container .container_second:hover .item_4 {
             background-color: #8F75BE;
             color: #fff;
+        }
+
+        // @-webkit-keyframes swing {
+        //     15% {
+        //       -webkit-transform: translateX(9px);
+        //       transform: translateX(9px);
+        //     }
+        //     30% {
+        //       -webkit-transform: translateX(-9px);
+        //       transform: translateX(-9px);
+        //     }
+        //     40% {
+        //       -webkit-transform: translateX(6px);
+        //       transform: translateX(6px);
+        //     }
+        //     50% {
+        //       -webkit-transform: translateX(-6px);
+        //       transform: translateX(-6px);
+        //     }
+        //     65% {
+        //       -webkit-transform: translateX(3px);
+        //       transform: translateX(3px);
+        //     }
+        //     100% {
+        //       -webkit-transform: translateX(0);
+        //       transform: translateX(-7px);
+        //     }
+        //   }
+          
+        //   @keyframes swing {
+        //     15% {
+        //       -webkit-transform: translateX(9px);
+        //       transform: translateX(9px);
+        //     }
+        //     30% {
+        //       -webkit-transform: translateX(-9px);
+        //       transform: translateX(-9px);
+        //     }
+        //     40% {
+        //       -webkit-transform: translateX(6px);
+        //       transform: translateX(6px);
+        //     }
+        //     50% {
+        //       -webkit-transform: translateX(-6px);
+        //       transform: translateX(-6px);
+        //     }
+        //     65% {
+        //       -webkit-transform: translateX(3px);
+        //       transform: translateX(3px);
+        //     }
+        //     100% {
+        //       -webkit-transform: translateX(0);
+        //       transform: translateX(-7px);
+        //     }
+        //   }
+          
+        //   .item_4:hover {
+        //     -webkit-animation: swing 0.6s ease;
+        //     animation: swing 0.6s ease;
+        //     -webkit-animation-iteration-count: 1;
+        //     animation-iteration-count: 1;
+        //   }
+
+        .item_4:hover {
+            box-shadow:
+              1px 1px #9FA3A7,
+              2px 2px #9FA3A7,
+              3px 3px #9FA3A7,
+              4px 4px #9FA3A7,
+              5px 5px #9FA3A7,
+              6px 6px #9FA3A7,
+              7px 7px #9FA3A7;
+            -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+        }
+
+        @-webkit-keyframes act {
+            from {
+                -webkit-transform: translateY(3px);
+            }
+            to {
+                -webkit-transform: translateY(0px);
+            }
+        }
+          
+        @keyframes act {
+            from {
+                -webkit-transform: translateY(3px);
+            }
+            to {
+                -webkit-transform: translateY(0px);
+            }
+        }
+
+        .item_4:active {
+            -webkit-animation: act 0.3s ease;
+            animation: act 0.3s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            box-shadow:
+              1px 1px #9FA3A7;
+          -webkit-transform: translateX(0px);
+            transform: translateX(0px);
         }
               
     }   
