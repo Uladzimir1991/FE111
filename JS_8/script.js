@@ -94,6 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.background = "0";
     });
 
+    a2.onclick = function () {
+        alert('А на левой кнопке такой фукции нету! ха-ха-ха')
+    }
+
 
     let style = document.createElement('style');
     style.innerHTML = `
