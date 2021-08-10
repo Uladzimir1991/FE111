@@ -70,6 +70,8 @@ function TodoList () {
         btn2.addEventListener('click', () => {
             let task;
             if(task = prompt('Отредактируйте задачу: ', value)) {
+                value = '';
+                value += task;
                 span.textContent = task;
                 span.appendChild(label);
 
