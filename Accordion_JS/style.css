@@ -1,0 +1,169 @@
+/* Сам интерфейс */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(images/bgi_main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list {
+    border: 1px solid #bbbbbb;
+    width: 50%;
+    margin: 50px auto;
+    list-style: none;
+    padding: 15px 10px;
+    overflow-y: scroll;
+    display: block;
+    height: 400px;
+    background-color: #fff;
+}
+
+.list__item1,
+.list__item2,
+.list__item3 {
+    margin-bottom: 5px;
+}
+
+.list__item1,
+.list__item2,
+.list__item3,
+.list__item4 {
+    border: 1px solid #bbbbbb;
+    cursor: default;
+    position: relative;
+    border-radius: 3px;
+}
+
+.visibility,
+.display {
+    padding: 30px 0px 100px 30px;
+}
+
+.item__section1,
+.item__section2,
+.item__section3,
+.item__section4,
+.theme,
+.h3 {
+    padding: 5px 30px ;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: normal;
+    position: relative;
+}
+
+:root {
+    --sizeW: 8px;
+    --sizeH: 8px;
+    --position: absolute;
+    --z: 1;
+    --top: 15px;
+    --left: 15px;
+    --transparent: 4px solid transparent;
+    --block: block;
+}
+
+/* Стили для работы с кликом */
+
+.arrow__down1,
+.arrow__down2,
+.arrow__down3,
+.arrow__down4 {
+    position: relative;
+}
+
+.arrow__down1::after,
+.arrow__down2::after,
+.arrow__down3::after,
+.arrow__down4::after {
+    content: '';  
+    width: var(--sizeW);
+    height: var(--sizeH);
+    display: var(--block);
+    background-image: url(images/down_arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: var(--position);
+    top: var(--top);
+    left: var(--left);
+    z-index: var(--z); 
+}
+
+.arrow__right1,
+.arrow__right2,
+.arrow__right3,
+.arrow__right4 {
+    position: relative;
+}
+
+.arrow__right1::before,
+.arrow__right2::before,
+.arrow__right3::before,
+.arrow__right4::before {
+    content: '';
+    width: var(--sizeW);
+    height: var(--sizeH);
+    display: var(--block);
+    background-image: url(images/right_arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: var(--position);
+    top: var(--top);
+    left: var(--left);
+    z-index: var(--z); 
+}
+
+.h3 {
+    display: var(--block);
+    background-color: #ececec;
+    color: #000;
+}
+
+.item__section1 {
+    background-color: rgb(97, 97, 255);
+    color: #fff;
+}
+
+.item__section2 {
+    display: var(--block);
+    background-color: #ececec;
+    color: #000;
+}
+
+.item__section3 {
+    display: var(--block);
+    background-color: #ececec;
+    color: #000;
+}
+
+.item__section4 {
+    display: var(--block);
+    background-color: #ececec;
+    color: #000;
+}
+
+.theme {
+    background-color: rgb(97, 97, 255);
+    color: #fff;
+}
+
+.item__text {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding-left: 30px;
+    transition: 0.6s ease;
+}
+
+.visibility,
+.display {
+    visibility: visible;
+    height: 180px;
+    transition: 0.6s ease;
+}
