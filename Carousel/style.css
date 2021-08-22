@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.wrapper { 
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.slider-container {
+    overflow: hidden;
+    background-color: brown;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: .4s;
+    height: 100%;
+}
+
+.slider-item:nth-child(3n+1) {
+    background-color: cadetblue;
+}
+
+.slider-item:nth-child(3n+2) {
+    background-color: rgb(11, 0, 170);
+}
+
+.slider-item:nth-child(3n+3) {
+    background-color: chartreuse;
+}
+
+.buttons {
+    text-align: center;
+}
