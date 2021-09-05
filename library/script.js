@@ -1,9 +1,9 @@
 window.addEventListener('load', function() {
 
     class $ {
-        static create(type) { 
+        static create(type) {
             return document.createElement(type)
-        }   
+        }
 
         static search(element, selector) {
             let result = element.querySelectorAll(selector)  
@@ -31,26 +31,28 @@ window.addEventListener('load', function() {
             element.classList.add(className)
         }
 
+        static hasClass(element, className) {
+            if(!element.className) return false;
+            else return true;
+        }
+
         static removeClass(element, className) {
             element.classList.remove(className);   
         }
 
         static toggleClass(element, className) {
             element.classList.toggle(className)
-        }
-
-        static hasClass(element, className) {
-            if(!element.className) return false;
-            else return true;
+            return this.element
         }
 
         static on(element, eventName, funcName) {
+            
             element.addEventListener(eventName, event => {
-                if(!event.target) return;
-                
+                if(event.target == element) { 
+                    this.toggleClass(element, funcName)
+                }
             })
         }
-
 
     }
 
@@ -77,6 +79,6 @@ window.addEventListener('load', function() {
     $.addClass(h2, 'content')
     $.removeClass(h2, 'content')
     $.toggleClass(h2, 'content')
-    console.log($.on(h2, 'click'))
+    console.log($.on(h2, 'click', 'blabla'))
     console.log($.hasClass(h2, 'content'))
 })
