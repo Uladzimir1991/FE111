@@ -59,7 +59,7 @@ let mail9= 'a_asd-123@dogwoof-woof.off';
 
 function email() {
 
-    let regexp9 = /([\w]+[._-]?[\w]){2,15}@{1}[a-z]+[.-]?[a-z]+.[a-z]{2,11}/gi;
+    let regexp9 = /([\w]+[._-]?[\w]){2,25}@{1}[a-z]+[.-]?[a-z]+.[a-z]{2,11}/gi;
 
     console.log(regexp9.test(mail9));
 }

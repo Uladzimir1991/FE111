@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 24px;
+    height: auto;
+}
+
+.contacts {
+    min-height: 1000px;
+    height: auto;
+    background-image: url(images/1.jpg);
+    background-size: cover;
+} 
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contacts__form input {
+    margin: 10px 0;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 4px 2px 10px rgba(0,0,0,0.5);
+    color: snow;
+}
+
+.contacts__form input::placeholder {
+    color: rgb(189, 195, 253)
+}
+
+.contacts__form input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.contacts__form input:hover {
+    background-color: #2b3435;
+    cursor: pointer;
+}
+
+.contacts__form .btn {
+    position: sticky;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid rgb(168, 168, 255);
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgb(168, 168, 255);
+    transition: all 0.3s ease-in;
+}
+
+.contacts__form .btn:active {
+    box-shadow: 0 0 #000; 
+    transition: all 0.3s ease-in;
+    border-top: 1px solid rgb(168, 168, 255);
+    border-bottom: 3px solid rgb(168, 168, 255);
+    border-right: 3px solid rgb(168, 168, 255);
+    border-left: 1px solid rgb(168, 168, 255);
+    color: #fff;
+}
+
+.contacts__form .btn:hover {
+    cursor: pointer;
+}
+
+.contacts__form .btn::before{
+    background: rgb(151, 151, 255);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.7s ease;
+}
+
+.contacts__form .add::before {
+    width: 0%;
+    height: 102%;
+}
+  
+.contacts__form .add:hover::before{
+    width: 101%;
+}
+
+.contact__list {
+    padding: 30px;
+    list-style: none;
+}
+
+.contact__list .user {
+    display: flex;
+    position: relative;
+    margin: 40px;
+    background-color: rgba(190, 189, 189, 0.7);
+    padding: 20px 20px 20px 50px;
+    box-shadow: 4px 2px 10px rgba(151, 151, 151, 0.5);
+    color:rgb(24, 24, 24);
+    font-family:monospace;
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.id {
+    color: rgba(252, 252, 252, 0.6);
+    font-size: 50px;
+    margin-right: 50px;
+    font-family: system-ui;
+    font-weight: 700;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 1);
+}
+
+.contact__list .user__remove {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    box-shadow: 4px 2px 10px rgba(151, 151, 151, 0.5);
+    transition: all 0.6s ease;
+}
+
+.contact__list .user__remove:hover {
+    background-color: #fae25b;
+    color: #000;
+    transform: rotate(360deg) scale(1.3);
+    transition: all 0.8s ease;
+}
+
+.li__elems {
+    color: rgb(255, 234, 166);
+    text-shadow: 0px 0px 2px rgb(255 255 255);
+}
+
+.li__elems .user__name {
+    transition: all 0.7s ease;
+}
+
+.li__elems .user__name:hover {
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+.ico__container {
+    position: relative;
+    width: 200px;
+    height: 17px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.ico__skype {
+    position: absolute;
+    left: 25px;
+    top: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.ico__viber {
+    position: absolute;
+    right: calc(50% - 16px);
+    top: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.ico__phone {
+    position: absolute;
+    right: 25px;
+    top: 8px;
+    cursor: pointer; 
+    transition: all 0.5s ease;
+}
+
+.ico__skype:hover,
+.ico__viber:hover,
+.ico__phone:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
