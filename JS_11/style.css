@@ -108,7 +108,7 @@ html {
     position: relative;
     margin: 40px;
     background-color: rgba(190, 189, 189, 0.7);
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 0px 50px;
     box-shadow: 4px 2px 10px rgba(151, 151, 151, 0.5);
     color:rgb(24, 24, 24);
     font-family:monospace;
@@ -154,19 +154,28 @@ html {
 
 .li__elems .user__name {
     transition: all 0.7s ease;
+    margin-bottom: 10px;
 }
 
 .li__elems .user__name:hover {
     transform: scale(1.05);
     transition: all 0.7s ease;
     cursor: pointer;
+    color: #97ced4;
+    text-shadow: 1px 1px 3px rgb(255 255 255);
+}
+
+.li__elems div {
+    margin-bottom: 10px;
 }
 
 .ico__container {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    left: 70%;
     width: 200px;
     height: 17px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     margin-left: 30px;
     padding: 15px;
@@ -201,4 +210,67 @@ html {
 .ico__phone:hover {
     transform: scale(1.2);
     transition: all 0.5s ease;
+}
+
+.phone {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background-color: rgba(255, 255, 255 ,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.homePhone {
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    transform: skewY(0deg);
+} 
+
+.mobilePhone {
+    top: 3px;
+    left: 3px;
+    transform: skewY(90deg);
+    position: absolute;
+}
+
+.arrowRight {
+    font-size: 40px;
+    z-index: 0;
+    position: relative;
+    right: -75px;
+    top: -70px;
+    cursor: pointer;
+    color: rgb(136, 165, 184);
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.arrowRight:hover,
+.arrowLeft:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.arrowLeft {
+    font-size: 40px;
+    z-index: 0;
+    position: relative;
+    right: 50px;
+    top: -70px;
+    cursor: pointer;
+    color: rgb(136, 165, 184);
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.homePhone__hidden {
+    transform: skewY(90deg);
+}
+
+.mobilePhone__visible {
+    transform: skewY(180deg);
 }
