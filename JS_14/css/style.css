@@ -13,6 +13,10 @@ a {
     width: 100%;
     text-decoration: none;
     transition: all .5s ease;
+    color: #000;
+    font-size: 34px;
+    font-family: fantasy;
+    text-align: center;
 }
 
 .header {
@@ -91,29 +95,126 @@ a {
     width:  200px;
 }
 
-.product__container {
+.catalog__title,
+.catalog__content,
+.btn__add {
+    font-family: cursive;
+}
+
+.catalog__title {
+    letter-spacing: 1.1px;
+}
+
+.catalog__content {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.products {
     display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
 }
 
 .product {
     display: flex;
-    padding: 0 30px;
+    flex-direction: column-reverse;
+    width: calc(33.3% - 30px);
+    margin-right: 30px;
 }
 
-.product .product__image {
-    display: inline-table;
-    padding: 0 30px;
+.product__id {
+    display: flex;
+    font-size: 24px;
+    text-align: center;
 }
 
 .product .product__img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .product .product__content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: rgb(37, 37, 37);
+    text-shadow: 0px 0px 1px rgb(43, 43, 43);
+    margin: auto;
+    width: 90%;
+}
+
+.btn__add {
+    color: rgb(0, 0, 0);
+    background-color: rgb(150, 150, 150);
+    border: none;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px auto;
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn__add:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast {
+    padding: 15px;
+    background-color: rgb(132, 155, 147);
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 3px;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all .8s ease;
+}
+
+.toast-active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .8s ease;
+    box-shadow: 0.5em 0.5em 18px rgb(95, 95, 95);
+}
+
+.product__cart {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.cart__content {
+    line-height: 130px;
+    margin: 0 40px;
+}
+
+.cart__img {
+    width: 7%;
+    height: 7%;
+    padding: 0 40px;
+}
+
+.delete {
+    height: fit-content;
 }
 
 .footer {
