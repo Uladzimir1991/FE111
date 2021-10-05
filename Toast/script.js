@@ -38,8 +38,8 @@ const Toast = function() {
     }
 
     const closeTimeout = function() {
-        if(toast.className = 'toast active'){
-            toast.classList.remove('active');
+        if(toast.className = 'toast toast_active'){
+            toast.classList.remove('toast_active');
         }
         setTimeout(closeTimeout, 4000)
     }

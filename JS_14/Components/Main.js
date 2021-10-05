@@ -1,12 +1,10 @@
 class Main {
-
     create() {
-        this.element = document.createElement('main')
-        this.element.classList.add('main')
+        this.element = document.createElement('main');
+        this.element.classList.add('main');
     }
 
-    rout() {
-
+    routing() {
         let hash = location.hash;
         hash = hash.replace('#', '');
 
@@ -15,24 +13,21 @@ class Main {
         this.element.innerHTML = '';
 
         if (hash.indexOf('catalog/product') != -1) hash = 'product';
-
-        import(`/components/${hash}.js` + (hash == 'product' ? '?v=' + new Date().getTime() : ''))
+    
+        import(`/components/${hash}.js` + (hash == 'product' || hash == 'cart' ? '?v=' + new Date().getTime() : ''))
         .then(module => {
             this.element.append(module.default);
         })
-        .catch(error => {
-            console.log(error);
-        });
     }
 
     render() {
-        this.create()
+        this.create();
 
         window.addEventListener('hashchange', _ => {
-            this.rout()
-        }) 
+            this.routing();
+        });
 
-        this.rout();
+        this.routing();
 
         return this.element;
     }
