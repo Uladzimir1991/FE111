@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Нестерович Владимир" />
+    <title>Figma model</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" /> 
+</head>
+<body>
+
+    <div class="main_section">
+
+        <div class="left_container">
+
+            <img class="main_img" src="Images/Eyedropper.png" alt="#">
+
+            <ul>
+                <li><button class="item item1"></button></li>
+                <li><button class="item item2"></button></li>
+                <li><button class="item item3"></button></li>
+                <li><button class="item item4"></button></li>
+            </ul>
+
+        </div>
+
+        <div class="right_container">
+            <h3>Popular</h3>
+            <h2>Paper Eyedropper</h2>
+
+            <div class="rating">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+            </div>
+
+            <div class="item_text">
+                Finally, another approach often cited in debates of scientific skepticism against controversial movements like "scientific creationism", is methodological naturalism. Its main point is that a difference between natural and supernatural explanations should be made, and that science should be restricted methodologically to natural explanations.
+            </div>
+
+            <div class="item_quantity">
+                Quantity
+
+                <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="1" value="1" />
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                </div>
+
+            </div>
+
+            <div class="colors">   
+                <span>Color</span> 
+                
+                <label class="radio"><input type="radio" name="name"><span class="aqua"></span></label>
+                <label class="radio"><input type="radio" name="name"><span class="purple"></span></label>
+                <label class="radio"><input type="radio" name="name"><span class="orange"></span></label>
+                <label class="radio"><input type="radio" name="name"><span class="black"></span></label>
+                <label class="radio"><input type="radio" name="name" checked><span class="lightgreen"></span></label>
+
+            </div>
+
+            <div class="price">
+                109<span>99</span>
+            </div>
+
+            <div class="bottom_turns">
+                <button class="shipping">Free shipping</button>
+                <button class="add">Add to cart</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>

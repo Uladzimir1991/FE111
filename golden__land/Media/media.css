@@ -1,0 +1,342 @@
+@media (max-width: 1240px) {
+
+    .promo h1 {
+        text-align: center;
+    }
+
+    .section_portfolio .portfolio_items ul li {
+        width: calc(50% - 30px);
+    }
+
+    .section_portfolio .portfolio_items ul li:not(:nth-child(3),:nth-child(6)) {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .top_section .nav .nav_toogle {
+        display: inline-block;
+    }
+
+    .top_section .nav ul {
+        display: none;
+    }
+
+    #nav_toogle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .8;
+        color: rgb(112, 112, 112);
+        width: 300px;
+        position: fixed;
+    }
+    .nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .nav ul a:hover {
+        color:rgb(254, 209, 54);
+    }
+
+    #nav_toogle:checked ~ ul li {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .section_allies .container .allies_company ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section_allies .allies_company ul li {
+        width: calc(50% - 15px);
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    .section_workers .workers_list .worker1, 
+    .section_workers .workers_list .worker2 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .section_portfolio .portfolio_items ul li {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 930px) {
+
+    .section_footer .footer_items ul {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .section_info .info_date .date1 img,
+    .section_info .info_date .date2 img,
+    .section_info .info_date .date3 img,
+    .section_info .info_date .date4 img {
+        margin-right: -85px;
+        height: 170px;
+        width: 170px;
+    }
+
+    .info_date .date_left_title {
+        margin-left: 120px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .section_allies .allies_company ul {
+        flex-wrap: wrap;
+    }
+
+    .section_allies .allies_company ul li {
+        margin-right: 15px !important;
+        width: auto;
+    }
+
+    .section_workers .workers_list {
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+     .section_footer .footer_items ul li:not(:first-child) {
+         margin-left: 0px;
+     }
+
+
+}
+
+@media (max-width: 610px) {
+
+    .section_info .info_date .date1,
+    .section_info .info_date .date2,
+    .section_info .info_date .date3,
+    .section_info .info_date .date4 {
+        width: 100%;
+        border: none;
+    } 
+
+    .section_info .info_date .date1 img,
+    .section_info .info_date .date2 img, 
+    .section_info .info_date .date3 img, 
+    .section_info .info_date .date4 img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .info_date .date_left_title {
+        margin-left: 20px;
+    }
+
+    .services_items_list {
+        flex-wrap: wrap;
+    }
+
+    .services_item {
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    .section_footer .footer_items .copyright {
+        font-size: 12px;
+        padding: 60px 0;
+    }
+
+}
+
+
+@media (max-width: 470px) {
+
+    .promo h1 {
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width:440px) {
+  
+    .section_info .info_date .date1 img, 
+    .section_info .info_date .date2 img, 
+    .section_info .info_date .date3 img, 
+    .section_info .info_date .date4 img {
+        height: 145px;
+        width: 145px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+
+    .nav ul {
+        width: 200px;
+    }
+
+    nav ul li a {
+        width: 50%;
+    }
+
+    .promo h1 {
+        font-size: 35px;
+    }
+
+    .promo .promo_welc {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .section_portfolio .portfolio_items ul li img {
+        width: 90%;
+    }
+
+    .section_services {
+        height: 1070px;
+    }
+
+    .section_services .services_items {
+        flex-direction: column;
+    }
+
+    .section_services .services_items .services_item1,
+    .section_services .services_items .services_item2 {
+        margin-bottom: 150px;
+        margin-right: 0px;
+    }
+
+    .section_info .info_date .date1,
+    .section_info .info_date .date2,
+    .section_info .info_date .date3,
+    .section_info .info_date .date4 {
+        margin-bottom: 50px;
+    }
+
+    .section_info .info_date .date1,  
+    .section_info .info_date .date3 {
+        flex-direction: column-reverse;
+    }
+
+    .section_info .info_date .date2,  
+    .section_info .info_date .date4 {
+        flex-direction: column;
+    }
+
+    .info_date .date_right_title,
+    .info_date .date_left_title {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .info_date img {
+        margin-bottom: 30px;
+    }
+
+    .date1_title,
+    .date2_title,
+    .date3_title,
+    .date4_title,
+    .date5_title {
+        width: 55%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .section_workers .workers_list .worker1,
+    .section_workers .workers_list .worker2 {
+        margin-bottom: 30px;
+    }
+
+    .section_allies .allies_company ul a {
+        margin-bottom: 20px;
+    }
+
+    .section_contact .contact_fields {
+        flex-direction: column;
+    }
+
+    .section_contact .contact_fields .contact_item1 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section_contact .contact_fields .contact_item2 {
+        width: 100%;
+    }
+
+    .section_contact .send_button {
+        margin-top: 20px;
+    }
+
+    .section_footer .footer_items {
+        flex-direction: column;
+    }
+
+    .section_footer .footer_items .copyright {
+        width: 100%;
+    }
+
+    .section_footer .footer_items ul {
+        width: 100%;
+    }
+
+    .section_footer .footer_items ul li:not(:first-child) {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .info_date .date_right_title,
+    .info_date .date_left_title {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .section_info .info_date .date1 img, 
+    .section_info .info_date .date2 img, 
+    .section_info .info_date .date3 img, 
+    .section_info .info_date .date4 img {
+        height: 105px;
+        width: 105px;
+    }
+
+
+}
