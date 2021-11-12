@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background-image: url(../images/main_img.jpg);
+  background-size: cover;
+}
+
+form {
+  width: 100%;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  transform: skewX(-40deg);
+}
+
+.input {
+  width: 100%;
+  position: relative;
+  left: -30px;
+  transform: skewX(40deg);
+  padding: 25px 50px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input {
+  outline: 0 !important;
+}
+
+.input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.btn__submit {
+  position: absolute;
+  top: 0;
+  right: 1.5px;
+  height: -webkit-fill-available;
+  padding: 10px 10%;
+  border: 2px solid #fff;
+  background-color: #df0000;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.span {
+  display: block;
+  transform: skewX(40deg);
+}
+
+.fab::before {
+  position: absolute;
+  left: 40px;
+  top: calc(50% - 15px);
+  transform: skewX(40deg);
+  font-size: 30px;
+}
+
+@media (max-width: 990px) {
+  .fab::before {
+    left: 25px;
+    font-size: 25px;
+  }
+  .container, .input, .span {
+    transform: skewX(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
