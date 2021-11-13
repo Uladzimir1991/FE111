@@ -41,8 +41,8 @@ const Dashboard = ({points}) => {
     useEffect(() => {
         if (time === 0 && sTI === null) {
             setResult({visible: true})
-            setCount(0);
             setTime(20)
+            // setCount(0)
         }
     }, [time]);
 
