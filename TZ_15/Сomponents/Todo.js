@@ -135,21 +135,24 @@ class Page {
             localStorage.setItem('task', JSON.stringify(this.array))
 
             const li = document.createElement('li')
-            li.innerHTML = `<span>${elem}</span>`;
+            li.innerHTML = `<p>${elem}</p>`;
 
-            let span = li.querySelectorAll('span')
-            span.forEach(element => {
+            let p = li.querySelectorAll('p')
+            p.forEach(element => {
                 element.addEventListener('click', event => {
                     if(!event.target) return;
-                    console.log('jahska')
                     element.classList.toggle('active')
                 })
             })
 
             li.dataset.index = index;
 
-            let btnDelEit = document.createElement('div')
-            btnDelEit.className = 'btn_del-edit'
+            let btnDelEdit = document.createElement('div')
+            btnDelEdit.className = 'btn_del-edit'
+
+            let id = document.createElement('span')
+            id.className = 'id'
+            id.innerHTML = `${index + 1}`
 
             const btnEdit = document.createElement('button')
             btnEdit.className = 'edit'
@@ -159,8 +162,8 @@ class Page {
             btnDelete.className = 'delete'
             btnDelete.textContent = '+'
 
-            btnDelEit.append(btnEdit, btnDelete)
-            li.append(btnDelEit);
+            btnDelEdit.append(btnEdit, btnDelete)
+            li.append(btnDelEdit, id);
             this.list.append(li);
 
             btnEdit.addEventListener('click', (event) => {

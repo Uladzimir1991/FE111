@@ -1,78 +1,105 @@
-@media (max-width: 2560px) {
-
-    .logo {
-        width: 20%;
+@media (min-width: 1990px) {
+    .page {
+        height: 60vw !important;
     }
-
-    .head__logo p {
-        font-size: 75px;
-        bottom: 60px;
-        right: 38%;
-    }
-
-    .soc__container_logo p {
-        bottom: 40px;
-        right: -1%;
-    }
-
 }
 
-@media (max-width: 1440px) {
-
-    .logo {
-        width: 35%;
+@media (min-width: 1441px) {
+    .main__wrapper {
+        bottom: -15vw;
     }
 
-    .head__logo p {
-        font-size: 70px;
-        bottom: 60px;
-        right: 30%;
+    .form {
+        top: 3vw;
     }
-
 }
 
 @media (max-width: 1265px) {
+    .business_title {
+        font-size: 40px;
+        margin-bottom: 5vw;
+    }
 
-    .nav ul {
+    .page {
+        height: 100vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        height: 110vw;
+    }
+
+    .page {
+        height: 120vw;
+    }
+
+    .business__analytics {
+        margin-right: 0;
+    }
+
+    .business_title {
+        text-align: center;
+    }
+
+    .main__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .business_title {
+        color: #333;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .form {
+        top: 0vw;
+    }
+
+    .footer_nav ul {
         display: none;
     }
 
-    .nav .nav_toogle label {
+    .footer_nav .nav_toogle label {
         display: inline-block;
     }
 
-    .nav .nav_toogle {
+    .footer_nav .nav_toogle {
         display: flex;
         background-color: rgb(182, 182, 228);
         margin-left: auto;
     }
 
-    #nav_toogle:checked ~ ul {
+    #nav_toogle:checked ~ .footer_nav-list {
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: flex-start;
     }
 
-    .nav ul {
+    .footer_nav .footer_nav-list {
         flex-direction: column;
         align-items: center;
         top: 0;
         left: 0;
         background-color: #000;
-        opacity: .8;
+        opacity: 0.8;
         width: 360px;
         position: fixed;
         z-index: 2;
     }
 
-    .nav ul li a {
+    .footer_nav .footer_nav-list a {
         padding: 30px 0;
-        color: #fff !important;
         letter-spacing: 1.1px;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
     }
 
-    .nav ul li a:hover {
+    .footer_nav ul li a:hover {
         color: #fb565a !important;
     }
 
@@ -82,236 +109,215 @@
         display: block;
     }
 
-    .nav__cart {
-        margin-left: 0;
+    .todo__container {
+        background-size: 100% 70%;
     }
 
+    .todo__list li {
+        width: calc(33.3% - 40px);
+    }
 }
 
-@media (max-width: 1024px) {
-
-    .head__logo p {
-        font-size: 50px;
+@media (max-width: 990px) {
+    .page {
+        height: 150vw;
     }
 
-    .popup__container {
-        justify-content: space-around;
-        padding: 0 50px;
+    .business_title {
+        line-height: 50px;
     }
-
-    .popup__container a {
-        width: 30%;
-    }
-
-    .cart__product_title {
-        margin: 0 50px;
-    }
-
-    .product {
-        width: calc(100% - 60px);
-    }
-
-    .product__image img {
-        width: 85%;
-    }
-
-    .soc__container_logo a {
-        text-align: center;
-    }
-
-    .soc__list_item {
-        margin: 0 20px;
-    }
-
 }
 
-@media (max-width: 830px) {
-
-    .product__item {
-        min-width: 295px;
+@media (max-width: 800px) {
+    .page {
+        height: 160vw;
     }
 
+    .nav_toogle label {
+        top: -6vw;
+    }
 }
 
 @media (max-width: 768px) {
+    html {
+        height: 130vw;
+    }
 
-    .head__logo p {
+    .form {
+        width: 400px;
+    }
+
+    .resp-1 {
+        padding: 20px 0;
+    }
+
+    .nav_toogle label {
+        top: -8vw;
+        left: -10vw;
+    }
+
+    .todo_logo {
+        width: 120px;
+        height: 77px;
+    }
+
+    .todo_wrapper {
+        bottom: -5vw;
+    }
+
+    .todo_logout {
+        padding: 15px 25px;
+    }
+
+    .name_block {
         font-size: 40px;
-        right: 28%;
     }
 
-    #nav_toogle:checked ~ ul {
-        width: 300px;
+    .todo_input {
+        width: 80%;
     }
 
-    .nav__list li a {
-        font-size: 25px;
+    .todo__list li {
+        width: calc(50% - 40px);
     }
-
-    .popup__container a {
-        width: 40%;
-    }
-
-    .product__item {
-        min-width: 220px;
-    }
-
-    .product__image {
-        align-self: flex-start;
-    }
-
-    .product__content h1 {
-        font-size: 25px;
-    }
-
-    .product_add {
-        margin: 0px auto;
-    }
-
-    .product__price, .product__meta h3 {
-        margin: 10px 0;
-    }
-
-    .product__description {
-        width: 290px;
-    }
-
-    .cart__product {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cart__product_remove {
-        position: absolute;
-        right: 5%;
-    }
-
-    .soc__container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .soc__container_copy {
-        width: 100%;
-        margin: 30px 0;
-    }
-
 }
 
-@media (max-width: 425px) {
-
-    .logo {
-        width: 70%;
+@media (max-width: 720px) {
+    .page {
+        height: 180vw;
     }
+}
 
-    .head__logo p {
-        font-size: 40px;
-        right: 7%;
-    }
-
-    .head__list .tel {
-        font-size: 21px;
-    }
-
-    .nav {
-        position: relative;
-    }
-
-    .nav .nav_toogle {
-        position: absolute;
-        right: 0;
+@media (max-width: 650px) {
+    .page {
+        height: 220vw;
     }
 
     #nav_toogle:checked ~ ul {
         width: 240px;
     }
 
-    .popup__container a {
+    .todo__list li {
         width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .page {
+        height: 250vw;
     }
 
-    .product__item img {
-        margin-top: 20px;
-        max-width: 80%;
+    .business_title {
+        font-size: 30px;
     }
 
-    .product__content h1 {
-        font-size: 20px;
+    .nav_toogle label {
+        top: -10vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .page {
+        height: 280vw;
+    }
+}
+
+@media (max-width: 465px) {
+    .page {
+        height: 320vw;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        height: 230vw;
     }
 
-    .btn__add {
-        margin: 0;
-        margin-bottom: 20px;
+    .form {
+        width: 300px;
     }
 
-    .cart__product_title a {
-        font-size: 18px;
-        line-height: 25px;
+    .page {
+        height: 350vw;
     }
 
-    .product {
-        flex-direction: column;
+    .todo_logout {
+        position: absolute;
+        right: -30px;
+        top: 0px;
     }
 
-    .product__image img {
-        width: 50%;
-        margin: 10px 0px;
+    .name_block {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 410px) {
+    .page {
+        height: 380vw;
     }
 
-    .soc__container_logo p {
-        bottom: 30px;
-        font-size: 40px;
+    .nav_toogle label {
+        top: -12vw;
+        left: -12vw;
     }
+}
 
+@media (max-width: 390px) {
+    .page {
+        height: 400vw;
+    }
 }
 
 @media (max-width: 375px) {
-
-    .head {
-        flex-direction: column;
-        align-items: center;
+    html {
+        height: 270vw;
     }
 
-    .head__logo {
-        margin-bottom: 20px;
+    .page {
+        height: 450vw;
     }
 
-    .head__logo p {
-        font-size: 35px;
-        right: 7%;
-        bottom: 25px;
+    .todo_logo {
+        margin: 0;
     }
 
-    .head__list .tel {
-        font-size: 18px;
+    .btn_add {
+        padding: 15px 25px;
     }
+}
 
-    .cart__product_title a {
-        font-size: 17px;
+@media (max-width: 350px) {
+    .page {
+        height: 480vw;
     }
+}
 
-    .product {
-        min-width: 300px;
+@media (max-width: 335px) {
+    .page {
+        height: 520vw;
     }
-
 }
 
 @media (max-width: 320px) {
-
-    .head__list .tel {
-        font-size: 25px;
+    html {
+        height: 320vw;
     }
 
-    .product {
-        min-width: 245px;
+    .nav_toogle label {
+        top: -16vw;
     }
 
-    .product__description {
-        width: 220px;
+    .footer_copyright-text {
+        font-size: 11px;
     }
 
-    .soc__container_logo p {
-        font-size: 35px;
+    .todo__title {
+        font-size: 24px;
     }
 
+    .todo_input {
+        padding: 15px 13px;
+    }
 }

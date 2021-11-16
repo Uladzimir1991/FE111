@@ -17,6 +17,8 @@ class Footer {
                     <a href="#Login"><img src="../images/Лого.png" alt="footer logo"></a>
                 </div>
                 <nav class="footer_nav">
+                    <button class="nav_toogle"><label for="nav_toogle"></label></button>
+                    <input type="checkbox" unchecked id="nav_toogle">
                     <ul class="footer_nav-list">
                         <a href="#"><li>Terms & Conitions</li></a>
                         <a href="#"><li>Privacy</li></a>

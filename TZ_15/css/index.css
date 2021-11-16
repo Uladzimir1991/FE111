@@ -46,24 +46,20 @@ ul {
 .main_content {
     background-image: url(../images/Фон.png);
     background-repeat: no-repeat;
+    background-size: contain;
     z-index: 0;
 }
 
 .main__wrapper {
     display: flex;
-    align-items: center;
     height: fit-content;
-}
-
-.main_content {
-    display: flex;
+    position: relative;
+    bottom: -8vw;
 }
 
 .business__analytics {
     width: 90%;
     margin-right: 30px;
-    position: relative;
-    top: 16vw;
 }
 
 .business_title {
@@ -107,6 +103,7 @@ ul {
     box-shadow: 0em 0em 0.9em rgb(0 0 0 / 20%);
     position: relative;
     top: 7vw;
+    height: fit-content;
 }
 
 .form_wrapper {
@@ -228,7 +225,7 @@ ul {
 }
 
 .todo__container {
-    height: 80vw;
+    height: 100vw;
     background: linear-gradient(#00a9e7, #005b9f);
     background-size: 100% 40%;
     background-repeat: no-repeat;
@@ -339,34 +336,53 @@ ul {
 .todo__list {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 15px;
 }
 
 .todo__list li {
-    width: calc(25% - 20px);
+    width: calc(25% - 40px);
+    padding: 0 10px;
     margin: 20px 0;
     position: relative;
     background: linear-gradient(#00a9e7, #005b9f);
     margin-right: 20px;
     box-shadow: 0.1em 0.1em 0.5em 0.2em rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    min-height: 150px;
+    max-height: 150px;
+    word-wrap: break-word;
 }
 
-.todo__list li span {
+.todo__list li p {
     display: inline-block;
-    margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 5px #000;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
+    cursor: pointer;
+    word-wrap: break-word;
 }
 
 .active {
     text-decoration: line-through;
     color: #333 !important;
     text-shadow: none;
+}
+
+.todo__list li .id {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 10px);
 }
 
 .todo__list li .delete {
@@ -412,4 +428,59 @@ ul {
 .todo__list li .edit:hover {
     transition: all 0.3s ease;
     transform: scale(1.1);
+}
+
+#nav_toogle {
+    display: none;
+}
+
+.nav_toogle {
+    display: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    border: none;
+    top: 50px;
+    cursor: pointer;
+}
+
+.nav_toogle label {
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    top: -5vw;
+    left: -5vw;
+    display: none;
+    cursor: pointer;
+}
+
+.nav_toogle label::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    top: calc(50% + 6px);
+    left: 0;
+    cursor: pointer;
+}
+
+.nav_toogle label::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    top: calc(50% - 12px);
+    left: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav_toogle label:hover,
+.nav_toogle label:hover::after,
+.nav_toogle label:hover::before {
+    box-shadow: 1px 1px 1px 1px rgb(117, 117, 117);
+    transition: all 0.3s ease;
 }
