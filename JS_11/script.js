@@ -136,7 +136,7 @@ class ContactsApp extends Contacts {
         formElem.append(this.elemName, this.elemEmail, this.elemAddress, this.elemPhone, this.btnAdd)
         container.append(formElem, this.list)
         document.body.append(container)
-        console.log(container)
+
         container.font = 'Dancing Script cursive'
 
         formElem.addEventListener('keyup', event => {
@@ -160,6 +160,7 @@ class ContactsApp extends Contacts {
         return await fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
                 .then(data => {
+                    console.log(typeof data)
                     data = data.map(user => {
                         return {
                             data: {
@@ -173,7 +174,6 @@ class ContactsApp extends Contacts {
                     })
             return data;
         })
-
     }
 
     getCookie(name) {
@@ -220,9 +220,8 @@ class ContactsApp extends Contacts {
 
         if(!storageExpiration) localStorage.removeItem('users')
 
-
         let data = localStorage.getItem('users')
- 
+
         if(!data || data.length == 0) return;
 
         data = JSON.parse(data)
