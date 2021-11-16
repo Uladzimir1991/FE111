@@ -1,6 +1,6 @@
-import header from "./Сomponents/Header.js";
-import main from "./Сomponents/Main.js";
-import footer from "./Сomponents/Footer.js";
+import header from "./Components/Header.js";
+import main from "./Components/Main.js";
+import footer from "./Components/Footer.js";
 
 class App {
     create() {
