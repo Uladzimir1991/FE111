@@ -13,7 +13,7 @@ class Header {
 
         <div class="head__blue-logo">
             <div class="container">
-                <a href="#Login"><img src="../images/Лого.png" alt="logo"></a>
+                <a href="#Login"><img src="../images/Logo.png" alt="logo"></a>
             </div>
         </div>
     `

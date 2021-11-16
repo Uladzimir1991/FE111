@@ -14,7 +14,7 @@ class Footer {
         this.container.innerHTML = `
             <section class="footer__head">    
                 <div class="footer_logo">
-                    <a href="#Login"><img src="../images/Лого.png" alt="footer logo"></a>
+                    <a href="#Login"><img src="../images/Logo.png" alt="footer logo"></a>
                 </div>
                 <nav class="footer_nav">
                     <button class="nav_toogle"><label for="nav_toogle"></label></button>

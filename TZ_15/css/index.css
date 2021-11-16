@@ -44,7 +44,7 @@ ul {
 }
 
 .main_content {
-    background-image: url(../images/Фон.png);
+    background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
@@ -273,7 +273,7 @@ ul {
 }
 
 .todo_logo {
-    background-image: url(../images/Лого.png);
+    background-image: url(../images/Logo.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 186px;
